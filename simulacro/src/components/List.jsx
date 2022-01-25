@@ -1,39 +1,11 @@
-import React, { useEffect, useState }  from 'react';
-import axios from 'axios';
-import {url} from '../helpers/url';
+import React from 'react';
 import '../styles/css/List.css';
+import ListCustomHook from './ListCustomHook';
 
 export const List = () => {
 
-    const [registro, setRegistro] = useState([]);
+    const {registro, deleteData } = ListCustomHook()
 
-    useEffect(() => {
-        getData();
-    }, [])
-
-    const getData = () => {
-            axios.get(url)
-            .then(response => {
-                setRegistro(response.data)
-            })
-            .catch(error => {
-                console.log(error);
-            })
-    }
-
-    const deleteData = (id) => {
-         axios.delete(url+id)
-         .then(response => {
-             getData();
-           console.log(response.data)
-        })
-        .catch(error => {
-            console.log(error);
-        })
-    }
-
-
-    
 
     console.log(registro)
     return (
