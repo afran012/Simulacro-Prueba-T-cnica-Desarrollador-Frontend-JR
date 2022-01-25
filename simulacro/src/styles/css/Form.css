@@ -1,0 +1,32 @@
+
+#formulario{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 3%;
+    margin-left: 30%;
+    border: 1px solid rgb(34, 179, 70);
+    margin-top: 5%;
+}
+
+#formulario h2{
+    text-align: center;
+    color: rgb(20, 88, 35);;
+}
+
+button{
+   color: rgb(70, 221, 32);
+   background-color: rgb(46, 150, 80);
+   border: 1px solid rgb(4, 46, 20);
+   font-size: 100%;
+   margin-left: 40%;
+}
+
+
+input{
+   margin-bottom: 10px;
+   margin-left: 10px;
+}
+
+select{
+    margin-bottom: 10px;
+}
